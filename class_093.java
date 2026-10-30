@@ -7,8 +7,17 @@ public class class_093 {
                 sum += i;
             }
         }
+        
         System.out.println("Sum of even numbers from 1 to 1000: " + sum);
 
-       
+        // count digit in a number
+        int number = 123456789;
+        int count = 0;
+        number = Math.abs(number); // Ensure the number is positive for counting digits
+        while (number != 0) {
+            number /= 10;
+            count++;
+        }
+        System.out.println("Number of digits: " + count);
     }
 }
